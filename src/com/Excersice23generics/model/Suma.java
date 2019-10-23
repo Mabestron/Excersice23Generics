@@ -15,6 +15,8 @@ public class Suma <T>
 		return this.miObjeto;
 	}
 	
+	/*// los mismo que los de abajo
+	 * suma de numeros cualquiera y el resultado darlo en double
 	public static <T,T2> Double SumaNumeros(T objeto1,T2 objeto2)
 	{
 		Double objDouble1=0.0, objDouble2=0.0;
@@ -25,4 +27,13 @@ public class Suma <T>
 		}
 		return objDouble1+objDouble2;
 	}
+	*/
+	
+	public static <T extends Number,T2 extends Number> T SumaNumeros(T objeto1,T2 objeto2)
+	{
+		Double resultado=0.0;
+		resultado=objeto1.doubleValue() + objeto2.doubleValue();
+		return (T) resultado;
+	}
+	
 }

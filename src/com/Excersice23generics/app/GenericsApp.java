@@ -27,6 +27,7 @@ public class GenericsApp
 		System.out.println(Multi.MuestraTipoDato("El Macho"));
 		System.out.println(Multi.MuestraTipoDato(10.0));
 		
+		//suma de dos numeros con resultado en double
 		System.out.println("La suma de 10.0 + 10.0 ="+Suma.SumaNumeros(10.0, 10.0));
 		
 	}
